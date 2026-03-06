@@ -3,4 +3,5 @@
     <string name="hello_string"> Hello Android World!</string>
     <string name="subtitle_text">My First App</string>
     <string name="lebron_james">Lebron James</string>
+    <string name="activity_oncreate_msg">Activity %1$s onCreate</string>
 </resources>

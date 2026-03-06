@@ -16,5 +16,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // Acrescentado de acordo com o ponto 5.2.2
+        // println(this@MainActivity.localClassName + " onCreate")
+        println(getString(R.string.activity_oncreate_msg, this@MainActivity.localClassName))
     }
 }
