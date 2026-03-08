@@ -10,15 +10,22 @@
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="280dp"
-        android:layout_height="174dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="343dp"
+        android:layout_height="287dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="@string/system_info"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="129dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="49dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
