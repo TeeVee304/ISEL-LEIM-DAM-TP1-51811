@@ -1,4 +1,4 @@
-package dam.exer_v1
+package dam.exer_vl
 
 abstract class Book(
     val title: String,
@@ -22,4 +22,10 @@ abstract class Book(
             field = if (value < 0) 0 else value
             if (field == 0) println("Book is currently out of stock.")
         }
+
+    abstract fun getStorageInfo(): String
+
+    override fun toString(): String {
+        return "Title: $title, Author: $author, Era: $era, Available: $availableCopies copies\nStorage: ${getStorageInfo()}" // [cite: 1024]
+    }
 }
