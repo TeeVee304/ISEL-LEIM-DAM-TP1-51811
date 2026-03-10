@@ -17,4 +17,10 @@ class Library(val name: String) {
         }
     }
 
+    fun addBook(book: Book) {
+        books.add(book)
+        totalBooksAdded++
+    }
+
+    
 }
