@@ -4,7 +4,7 @@ enum class BookFormat {
     PDF, EPUB, MOBI
 }
 
-abstract class DigitalBook(
+class DigitalBook(
     title: String,
     author: String,
     publicationYear: Int,
