@@ -11,7 +11,7 @@ fun main() {
 
     /*
      * Do-While: Ciclo de execução principal.
-     * Processa continuamente as entradas até o utilizador digitar "exit".
+     * Processa continuamente as entradas até o utilizador escrever "exit".
      */
     do {
         print("\n> ")
@@ -29,7 +29,7 @@ fun main() {
                 // Operação lógica unária (negação "!")
                 parts.size == 2 && parts[0] == "!" -> {
                     val operand = parts[1].toLong()
-                    if (operand == 0L) 1L else 0L
+                    if (operand == 0L) 1L else 0L // ex.: 0L = '0 em formato long'
                 }
 
                 // Operações binárias (restantes)
@@ -44,7 +44,6 @@ fun main() {
                         "-" -> a - b
                         "*" -> a * b
                         "/" -> {
-                            // Tratamento da divisão por zero (0L = '0 em formato long')
                             if (b == 0L) throw Exception("Cannot divide by zero (0).")
                             a / b
                         }
